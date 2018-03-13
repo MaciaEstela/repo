@@ -2,6 +2,14 @@ public class Cercle {
  private float x;
  private float y;
 
+ 
+      public static void main(String[] args) {
+
+        Cercle c1=new Cercle();
+        Cercle c2=new Cercle(5, 10);
+
+    }
+ 
     public Cercle(float x, float y) {
         this.x = x;
         this.y = y;
@@ -15,6 +23,21 @@ public class Cercle {
         return "Cercle{" + "x=" + x + ", y=" + y + '}';
     }
 
+	public float getX() {
+        return x;
+    }
+
+    public void setX(float x) {
+        this.x = x;
+    }
+
+    public float getY() {
+        return y;
+    }
+
+    public void setY(float y) {
+        this.y = y;
+    }
 
     @Override
     public boolean equals(Object obj) {
@@ -36,7 +59,5 @@ public class Cercle {
         }
         return true;
     }
- 
-   
  
 }
